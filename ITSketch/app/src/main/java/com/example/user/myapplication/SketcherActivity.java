@@ -48,9 +48,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.example.cabby333.myapplication.R;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -65,10 +62,10 @@ import java.util.Objects;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-import static com.example.cabby333.myapplication.PortfolioActivity.COLLAGE_IMG_COUNT;
-import static com.example.cabby333.myapplication.PortfolioActivity.CURR_HOUSE;
-import static com.example.cabby333.myapplication.PortfolioActivity.CURR_ROOM;
-import static com.example.cabby333.myapplication.PortfolioActivity.FROM_TAKE_IMG;
+import static com.example.user.myapplication.PortfolioActivity.COLLAGE_IMG_COUNT;
+import static com.example.user.myapplication.PortfolioActivity.CURR_HOUSE;
+import static com.example.user.myapplication.PortfolioActivity.CURR_ROOM;
+import static com.example.user.myapplication.PortfolioActivity.FROM_TAKE_IMG;
 
 public class SketcherActivity extends Fragment
         implements View.OnClickListener, ActivityCompat.OnRequestPermissionsResultCallback {

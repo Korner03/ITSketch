@@ -43,9 +43,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.example.cabby333.myapplication.R;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

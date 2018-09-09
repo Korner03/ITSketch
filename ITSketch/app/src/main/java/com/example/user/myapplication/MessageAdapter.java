@@ -8,8 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.example.cabby333.myapplication.PortfolioActivity.STATES;
-import com.example.cabby333.myapplication.R;
+import com.example.user.myapplication.PortfolioActivity.STATES;
 
 import java.util.List;
 

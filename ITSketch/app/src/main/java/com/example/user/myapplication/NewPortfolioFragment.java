@@ -12,9 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
-import com.example.cabby333.myapplication.R;
-
-import static com.example.cabby333.myapplication.ItemListFragment.KEY_TYPE;
+import static com.example.user.myapplication.ItemListFragment.KEY_TYPE;
 
 public class NewPortfolioFragment extends Fragment {
 

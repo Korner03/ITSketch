@@ -22,8 +22,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
-import com.example.cabby333.myapplication.PortfolioActivity.STATES;
-import com.example.cabby333.myapplication.R;
+import com.example.user.myapplication.PortfolioActivity.STATES;
 
 public class ItemListFragment extends Fragment {
 

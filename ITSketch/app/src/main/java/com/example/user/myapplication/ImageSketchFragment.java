@@ -21,14 +21,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-import com.example.cabby333.myapplication.R;
-
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import java.util.ArrayList;
 
-import static com.example.cabby333.myapplication.SketcherActivity.mFile;
+import static com.example.user.myapplication.SketcherActivity.mFile;
 
 public class ImageSketchFragment extends Fragment {
 
