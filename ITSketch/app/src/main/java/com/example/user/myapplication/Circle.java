@@ -1,4 +1,4 @@
-package com.example.user.itsketch;
+package com.example.user.myapplication;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -6,8 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.widget.ImageView;
-
-import java.util.ArrayList;
 
 /**
  * A class which represents a Circle, it is defined by a 2D coordinate of it's center and radius

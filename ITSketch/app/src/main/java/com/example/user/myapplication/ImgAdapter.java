@@ -1,4 +1,4 @@
-package com.example.user.itsketch;
+package com.example.user.myapplication;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -12,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.cabby333.myapplication.R;
 

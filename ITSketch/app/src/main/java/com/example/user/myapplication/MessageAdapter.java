@@ -1,4 +1,4 @@
-package com.example.user.itsketch;
+package com.example.user.myapplication;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

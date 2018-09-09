@@ -1,4 +1,4 @@
-package com.example.user.itsketch;
+package com.example.user.myapplication;
 
 import com.google.gson.JsonArray;
 import com.google.gson.annotations.Expose;

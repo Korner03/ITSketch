@@ -1,4 +1,4 @@
-package com.example.user.itsketch;
+package com.example.user.myapplication;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

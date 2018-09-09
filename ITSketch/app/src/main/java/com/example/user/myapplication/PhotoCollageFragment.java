@@ -1,4 +1,4 @@
-package com.example.user.itsketch;
+package com.example.user.myapplication;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,7 +9,6 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -20,7 +19,6 @@ import com.example.cabby333.myapplication.R;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class PhotoCollageFragment extends Fragment {
 

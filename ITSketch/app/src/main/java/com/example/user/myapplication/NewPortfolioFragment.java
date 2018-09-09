@@ -1,4 +1,4 @@
-package com.example.user.itsketch;
+package com.example.user.myapplication;
 
 import android.support.v4.app.Fragment;
 import android.content.Context;
@@ -13,8 +13,6 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 
 import com.example.cabby333.myapplication.R;
-
-import java.util.Objects;
 
 import static com.example.cabby333.myapplication.ItemListFragment.KEY_TYPE;
 
