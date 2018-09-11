@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     android:id="@+id/container_main"
     android:background="@drawable/win_xp_back"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:text="@string/welcome_to_itsketch_n"/>
+            android:text=""/>
 
         <LinearLayout
             android:layout_height="wrap_content"
@@ -60,6 +60,7 @@
                 android:layout_marginTop="6dp"/>
 
         </LinearLayout>
+
 
     </LinearLayout>
 

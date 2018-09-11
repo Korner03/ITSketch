@@ -37,7 +37,7 @@ public class ResultsDisplayFragment extends Fragment {
     public static ResultsDisplayFragment newInstance(@NonNull  Bitmap imgBitmap, Boolean inSketchMode, String imgPath) {
         Log.i(TAG, "newInstance");
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imgBitmap.compress(Bitmap.CompressFormat.JPEG, 40, stream);
         byte[] byteArray = stream.toByteArray();
 //        imgBitmap.recycle();
 

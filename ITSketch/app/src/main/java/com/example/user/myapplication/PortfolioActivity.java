@@ -587,6 +587,8 @@ public class PortfolioActivity extends AppCompatActivity
         inNewPort = false;
         inDisplayImg = false;
 
+        setTitle("Room: " + mCurrRoom);
+
         getSupportFragmentManager().popBackStack(PHOTOS_NEW_PHOTO_TAG, 0);
         getSupportFragmentManager()
                 .beginTransaction()
