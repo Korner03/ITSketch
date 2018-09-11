@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layoutDirection="ltr"
     android:background="?android:windowBackground">
 
     <ImageView
         android:id="@+id/full_sketch2"
         android:layout_width="match_parent"
-        android:layout_height="453dp"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:adjustViewBounds="false"
-        android:contentDescription="@string/current_image_taken"
-        android:cropToPadding="false" />
+        android:contentDescription="@string/current_image_taken" />
 
     <FrameLayout
         android:id="@+id/tools"
         android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:layout_below="@+id/full_sketch2"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:background="@color/control_background">
 
         <Button
             android:id="@+id/discard"
             style="@android:style/Widget.Material.Light.Button.Inset"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:layout_gravity="center_vertical|left"
             android:text="@string/discard" />
 
@@ -36,7 +34,7 @@
             android:id="@+id/add_notes"
             style="@android:style/Widget.Material.Light.Button.Inset"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:layout_gravity="center"
             android:text="@string/add_notes" />
 
@@ -55,7 +53,7 @@
             android:id="@+id/save"
             style="@android:style/Widget.Material.Light.Button.Inset"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:layout_gravity="center_vertical|right"
             android:text="@string/save" />
 

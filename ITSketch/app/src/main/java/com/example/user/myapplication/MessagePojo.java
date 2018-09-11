@@ -16,7 +16,12 @@ public class MessagePojo {
     }
 
     public String getFileName() {
-        return name + "_" + roomType.toString();
+        String fileName;
+        if (roomType == PortfolioActivity.ROOM_TYPES.HOUSE)
+            fileName = name;
+        else
+            fileName = name + "_" + roomType.toString();
+        return fileName;
     }
 
     public PortfolioActivity.ROOM_TYPES getRoomType() {
