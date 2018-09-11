@@ -47,21 +47,39 @@ public class Rect extends ImageSketchFragment implements Shape {
         imageView.setImageDrawable(new BitmapDrawable(resources, mutableBitmap));
     }
 
+//    @Override
+//    public void drawText(Canvas canvas, ImageView imageView, Bitmap mutableBitmap, Paint paint, Resources resources, String data) {
+//        paint.setTextSize(TEXT_SIZE);
+//
+//        float midX = (top.getFirstCoord().getxCoord() + bottom.getFirstCoord().getxCoord()) / 2f;
+//        float midY = (top.getFirstCoord().getyCoord() + bottom.getFirstCoord().getyCoord()) / 2f;
+//
+//        float minX = Math.min(top.getFirstCoord().getxCoord(),top.getSecondCoord().getxCoord());
+//        midX = (midX + minX) / 2.2f;
+//        float topMinY = Math.max(top.getFirstCoord().getyCoord(), top.getSecondCoord().getyCoord());
+//        midY = (midY + topMinY) / 2f;
+//
+//        String[] dataArr = data.split(",");
+//        canvas.drawText("Width: " + dataArr[0] + " cm", midX, midY, paint);
+//        canvas.drawText("Height: " + dataArr[1] + " cm", midX, midY + TEXT_SIZE, paint);
+//        imageView.setImageDrawable(new BitmapDrawable(resources, mutableBitmap));
+//    }
+
     @Override
     public void drawText(Canvas canvas, ImageView imageView, Bitmap mutableBitmap, Paint paint, Resources resources, String data) {
         paint.setTextSize(TEXT_SIZE);
-
-        float midX = (top.getFirstCoord().getxCoord() + bottom.getFirstCoord().getxCoord()) / 2f;
-        float midY = (top.getFirstCoord().getyCoord() + bottom.getFirstCoord().getyCoord()) / 2f;
-
-        float minX = Math.min(top.getFirstCoord().getxCoord(),top.getSecondCoord().getxCoord());
-        midX = (midX + minX) / 2.2f;
-        float topMinY = Math.max(top.getFirstCoord().getyCoord(), top.getSecondCoord().getyCoord());
-        midY = (midY + topMinY) / 2f;
-
         String[] dataArr = data.split(",");
-        canvas.drawText("Width: " + dataArr[0] + " cm", midX, midY, paint);
-        canvas.drawText("Height: " + dataArr[1] + " cm", midX, midY + TEXT_SIZE, paint);
+
+        if (dataArr.length == 4) {
+            top.drawText(canvas, imageView, mutableBitmap, paint, resources, dataArr[0]);
+            right.drawText(canvas, imageView, mutableBitmap, paint, resources, dataArr[1]);
+            bottom.drawText(canvas, imageView, mutableBitmap, paint, resources, dataArr[2]);
+            left.drawText(canvas, imageView, mutableBitmap, paint, resources, dataArr[3]);
+        } else if (dataArr.length == 2) {
+            right.drawText(canvas, imageView, mutableBitmap, paint, resources, dataArr[1]);
+            bottom.drawText(canvas, imageView, mutableBitmap, paint, resources, dataArr[0]);
+        }
+
         imageView.setImageDrawable(new BitmapDrawable(resources, mutableBitmap));
     }
 

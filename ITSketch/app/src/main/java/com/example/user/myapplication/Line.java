@@ -66,7 +66,7 @@ public class Line implements Shape {
         }
         // TODO make more robust to flat slope lines
 
-        canvas.drawText("Length: " + data + " cm", midX, midY, paint);
+        canvas.drawText(data + " cm", midX, midY, paint);
 
         imageView.setImageDrawable(new BitmapDrawable(resources, mutableBitmap));
     }

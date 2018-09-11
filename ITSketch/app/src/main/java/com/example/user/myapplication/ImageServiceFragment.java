@@ -226,7 +226,7 @@ public class ImageServiceFragment extends Fragment {
 
     private void test() {
         String numSketches = "4";
-        String resultsData = "LINE,1;FREE_RECT,20,21;CIRCLE,30,31,32;RECT,40,41";
+        String resultsData = "LINE,1;FREE_RECT,20,21,22,23;CIRCLE,30,31,32;RECT,40,41";
         ArrayList<Pair<String, String>> resDataArr = parseShapes(numSketches, resultsData);
         ArrayList<Map> predDataArr = new ArrayList<>();
         mCallback.onImgResponse(resDataArr, predDataArr);
