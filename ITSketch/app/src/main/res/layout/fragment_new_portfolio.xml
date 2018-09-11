@@ -59,7 +59,7 @@
             android:id="@+id/radio_bathroom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Bathroom"
+            android:text="@string/Toilet"
             android:textSize="10sp" />
 
 

@@ -102,8 +102,8 @@ public class ImageServiceFragment extends Fragment {
             mSketchInfo = args.getString("sketchInfo", "");
             // The image taken in Bytes
             mImgBytes = args.getByteArray("imgByteArray");
-//            test();
-            makeRequest();
+            test();
+//            makeRequest();
         } else {
             Log.i(TAG, "Did not receive arguments");
         }

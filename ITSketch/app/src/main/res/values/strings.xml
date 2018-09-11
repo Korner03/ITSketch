@@ -23,4 +23,5 @@
     <string name="Default">Default</string>
     <string name="Bedroom">Bedroom</string>
     <string name="livingroom">Livingroom</string>
+    <string name="Toilet">Toilet</string>
 </resources>
