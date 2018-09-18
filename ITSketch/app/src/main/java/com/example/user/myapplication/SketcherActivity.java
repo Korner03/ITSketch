@@ -191,7 +191,7 @@ public class SketcherActivity extends Fragment
     private PortfolioActivity mCurrActivity;
 
     public enum PREDICTION_LABELS {
-        caliberator, electricity
+        ITSketch, electricity, electricity2, electricity3
     }
 
 
@@ -1135,11 +1135,14 @@ public class SketcherActivity extends Fragment
 
         for (int i = 0; i < mPredInfoArr.size(); i++) {
             Map currPredict = mPredInfoArr.get(i);
+            Log.i(TAG, currPredict.get("label").toString());
             // PREDICTION_LABELS.valueOf(currPredict.get("label").toString()) == PREDICTION_LABELS.electricity TODO instead of below
-            if (true) {
+            if (PREDICTION_LABELS.valueOf(currPredict.get("label").toString()) != PREDICTION_LABELS.ITSketch) {
+                Log.i(TAG, "----1----");
                 String[] xyTopLeft = currPredict.get("topleft").toString().split(",");
+                Log.i(TAG, "----2----");
                 String[] xyBottomRight = currPredict.get("bottomright").toString().split(",");
-
+                Log.i(TAG, "----3----");
                 float x1Coord = Float.parseFloat(xyTopLeft[0]);
                 float y1Coord = Float.parseFloat(xyTopLeft[1]);
                 float x2Coord = Float.parseFloat(xyBottomRight[0]);
@@ -1149,10 +1152,13 @@ public class SketcherActivity extends Fragment
                 Line right = new Line(x2Coord, y1Coord, x2Coord, y2Coord);
                 Line bottom = new Line(x2Coord, y2Coord, x1Coord, y2Coord);
                 Line left = new Line(x1Coord, y2Coord, x1Coord, y1Coord);
-
+                Log.i(TAG, "----4----");
                 Rect predRect = new Rect(top, right, bottom, left);
 
                 predRect.drawShape(mCurrCanvas, fragImgView, mCurrBitmap, mPredPaint, getResources());
+                Log.i(TAG, "----5----");
+            } else {
+                Log.i(TAG, "ELSE");
             }
         }
 
