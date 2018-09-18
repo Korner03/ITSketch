@@ -11,7 +11,8 @@ import retrofit2.http.Query;
 
 public interface Service {
 
-    String SERVER_IP = "http://54.201.103.222";
+    String SERVER_IP = "http://34.216.142.143";
+//    String SERVER_IP = "http://54.201.103.222";
     String SERVER_PORT = "8080";
 
     @Multipart
