@@ -24,4 +24,7 @@
     <string name="Bedroom">Bedroom</string>
     <string name="livingroom">Livingroom</string>
     <string name="Toilet">Toilet</string>
+    <string name="my_houses">My houses</string>
+    <string name="add_new_house">Add New House</string>
+    <string name="first_time_user">first time user?</string>
 </resources>
