@@ -7,7 +7,7 @@
     <string name="current_image_taken">Current Image taken</string>
     <string name="ok">OK</string>
     <string name="clear">Clear</string>
-    <string name="splash_screen_text">Calculating...</string>
+    <string name="splash_screen_text">Calculating…</string>
     <string name="discard">Discard</string>
     <string name="save">Save</string>
     <string name="selection_by_right_arrow_img">Selection by Right Arrow img</string>
