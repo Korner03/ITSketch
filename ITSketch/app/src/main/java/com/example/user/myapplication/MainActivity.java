@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity implements NewPortfolioFragm
 
     private static final String MAIN_TO_NEW_TAG = "main2newport";
     private static final String MAIN_TO_CALIB_TAG = "main2calib";
-
+    private static final String FIRST_TIME_USER_TITLE = "First time user";
+    private static final String MAIN_TITLE = "ITSketch";
     public static final String KEY_HOUSES = "Houses";
 
     private Thread workerThread;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements NewPortfolioFragm
         firstTimeUser.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.i(TAG, "Get Caliberator Button Clicked");
-
+                setTitle(FIRST_TIME_USER_TITLE);
                 getSupportFragmentManager().beginTransaction()
                         .add(R.id.container_main, Caliberator.newInstance())
                         .addToBackStack(MAIN_TO_CALIB_TAG)
@@ -148,6 +149,7 @@ public class MainActivity extends AppCompatActivity implements NewPortfolioFragm
     @Override
     public void onBackPressed() {
         Log.i(TAG, "BackPressed");
+        setTitle(MAIN_TITLE);
         super.onBackPressed();
     }
 
