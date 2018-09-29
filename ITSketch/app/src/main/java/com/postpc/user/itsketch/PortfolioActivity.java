@@ -1,6 +1,7 @@
 package com.postpc.user.itsketch;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
@@ -330,6 +331,8 @@ public class PortfolioActivity extends AppCompatActivity
             Log.i(TAG, "onBackPressed - in ESTATES");
             getSupportFragmentManager().popBackStack();
             finish();
+            Intent intent = new Intent(PortfolioActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 

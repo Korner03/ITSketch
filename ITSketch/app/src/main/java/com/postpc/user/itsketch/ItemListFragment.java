@@ -98,20 +98,27 @@ public class ItemListFragment extends Fragment {
     public void loadItems() {
         Log.i(TAG, "loadItems");
         if (mType == STATES.ESTATES) {
+            Log.i(TAG, "loadItems-1");
             if (mCurrActivity.getCurrItemsArr(mCurrName) != null) {
+                Log.i(TAG, "loadItems-2 - " + mCurrName);
                 for (String name : mCurrActivity.getCurrItemsArr(mCurrName)) {
+                    Log.i(TAG, "loadItems-3");
                     mAdapter.addMessage(new MessagePojo(name, PortfolioActivity.ROOM_TYPES.HOUSE));
                 }
             }
         } else {
+            Log.i(TAG, "loadItems-4");
             if (mCurrActivity.getmRoomsArr(mCurrName) != null) {
+                Log.i(TAG, "loadItems-5");
                 for (Pair<String, String> pair : mCurrActivity.getmRoomsArr(mCurrName)) {
+                    Log.i(TAG, "loadItems-6");
                     String roomName = pair.first;
                     PortfolioActivity.ROOM_TYPES roomType = PortfolioActivity.ROOM_TYPES.valueOf(pair.second);
                     mAdapter.addMessage(new MessagePojo(roomName, roomType));
                 }
             }
         }
+        Log.i(TAG, "loadItems-7");
         mList.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
 
