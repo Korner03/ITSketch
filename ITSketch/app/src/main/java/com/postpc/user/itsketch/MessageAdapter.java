@@ -232,7 +232,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             this.listener = onClickListener;
         }
     }
-
+ 
     class BathroomViewHolder extends RecyclerView.ViewHolder {
 
         TextView name;
